@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ITSegmenter</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f25e5e"/>
+	<meta name="keywords" content="JavaScript,OCR,DBSCAN,Clustering,Image Processing,Text Recognition,Classification">
+	<meta name="author" content="Barry Li">
+	<meta name="description" content="Extract text regions in an image">
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+	<link rel="manifest" href="manifest.webmanifest">
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css\main.css">
+	<link rel="stylesheet" type="text/css" href="css\index.css">
+	
+	
+	<!-- Javascripts -->
+	<script src="src\tether.min.js"></script>
+    <script src="src\jquery.min.js"></script>
+    <script src="src\jquery.mousewheel.min.js"></script>
+	<script src="src\bootstrap.min.js"></script>
+    <script src="src\path.min.js"></script>
+    <script src="src\jquery.scrollto.min.js"></script>
+</head>
+
+<body>
+	<div id="layout">
+		<a href="#sbar" id="sidebarTog" class="sidebar-tog">
+			<span></span>
+		</a>
+		<!-- Side Bar -->
+		<div id="sbar" class="sidebar">
+			<a href="index.html" id="sidebar-title">
+				<img src="img/logoInverted.png">
+				<div>Segmenter</div>
+			</a>
+            <br>
+			<p class="sidebar-headings">Documentation</p>
+            <br>
+			<a href="docs.html#/intro">Introduction</a>
+			<a href="docs.html#/segImg">ITSegmenter</a>
+			<a href="docs.html#/usm">Unsharp Masking</a>
+			<a href="docs.html#/fast">FAST</a>
+			<a href="docs.html#/kdTree">K-D Tree</a>
+			<a href="docs.html#/dbscan">DBSCAN</a>
+            <br>
+            <br>
+            <br>
+			<p class="sidebar-headings">Test</p>
+			<a href="yourimage.html">Auto Crop</a>
+			<a href="yourimage.html">Your Image</a>
+			
+		</div>
+	
+
+		<!-- Content Container -->
+		<div class="container" id="main-container">
+			<div class="background-container">
+				<img id="indexBackground" src="img/indexBackground.jpg">
+				<div class="background-centered"><h1>Fake Land Deed Detector</h1></div>
+			</div>
+			
+			<div class="two-col">
+				<a class="left-col" id="topLeftCol"  href="demo.html">
+					<div class="col-text">
+						<h2 class="col-text-heading">Demo</h2>
+						<img class="index-icon" src="img/demoIcon.png">
+						<div class="egg" id="eggLeftTop"></div>
+					</div>
+				</a>
+				
+				<a class="right-col" id="topRightCol" href="dbscan.html">
+					<div class="col-text">
+						<h2 class="col-text-heading">DBSCAN</h2>
+						<img class="index-icon" src="img/dbscanIcon.png">
+						<div class="egg" id="eggRightTop"></div>
+					</div>
+				</a>
+			</div>	
+			
+			<div class="two-col">
+				<a class="left-col" id="botLeftCol" href="yourimage.html">
+					<div class="col-text">
+						<h2 class="col-text-heading">Auto Crop</h2>
+						<img class="index-icon" src="img/autocropIcon.png">
+						<div class="egg" id="eggLeftBot"></div>
+					</div>
+				</a>
+				
+				<a class="right-col" id="botRightCol" href="yourimage.html">
+					<div class="col-text">
+						<h2 class="col-text-heading">Your Image</h2>
+						<img class="index-icon" src="img/yourimgIcon.png">
+						<div class="egg" id="eggRightBot"></div>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+	</div>
+	
+
+	
+</body>
+
+<footer>
+	<script src="src/main.js"></script>
+</footer>
+
+</html>
